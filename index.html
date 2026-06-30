@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BILYALOV JJ TEAM — школа бразильского ДЖИУ-ДЖИТСУ для детей и взрослых. Запишитесь на бесплатную тренировку.">
+  <title> BILYALOV JJ TEAM | Школа бразильского ДЖИУ-ДЖИТСУ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-mark" aria-hidden="true">BJJ</span>
+        <span class="nav__logo-text">Bilyalov <strong>JJ Team</strong></span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#programs" class="nav__link">Программы</a></li>
+        <li><a href="#coaches" class="nav__link">Тренер</a></li>
+        <li><a href="#schedule" class="nav__link">Расписание</a></li>
+        <li><a href="#testimonials" class="nav__link">Отзывы</a></li>
+        <li><a href="#pricing" class="nav__link">Цены</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Записаться</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="hero__gradient"></div>
+        <div class="hero__mesh"></div>
+        <div class="hero__lines" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+      </div>
+      <div class="hero__content container">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          ШКОЛА БРАЗИЛЬСКОГО ДЖИУ-ДЖИТСУ
+        </div>
+        <h1 class="hero__title">
+          <span class="hero__title-line hero__title-line--gold">Тренируйся.</span>
+          <span class="hero__title-line">Развивайся.</span>
+          <span class="hero__title-line hero__title-line--outline">Побеждай.</span>
+        </h1>
+        <p class="hero__subtitle">
+          Для детей и взрослых любого уровня подготовки.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary btn--glow">
+            <span>Записаться на бесплатную тренировку</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#schedule" class="btn btn--outline">Посмотреть расписание</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="100">0</span>
+            <span class="hero__stat-suffix">+</span>
+            <span class="hero__stat-label">Учеников</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="10">0</span>
+            <span class="hero__stat-suffix">+</span>
+            <span class="hero__stat-label">Лет опыта</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="100">0</span>
+            <span class="hero__stat-suffix">+</span>
+            <span class="hero__stat-label">Медалей</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <a href="#programs" aria-label="Прокрутить вниз">
+          <span class="hero__scroll-text">Листай</span>
+          <span class="hero__scroll-line"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Детские группы</span><span class="marquee__dot">◆</span>
+        <span>Взрослые группы</span><span class="marquee__dot">◆</span>
+        <span>Соревнования</span><span class="marquee__dot">◆</span>
+        <span>Бразильское ДЖИУ-ДЖИТСУ</span><span class="marquee__dot">◆</span>
+        <span>Бесплатная тренировка</span><span class="marquee__dot">◆</span>
+        <span>Детские группы</span><span class="marquee__dot">◆</span>
+        <span>Взрослые группы</span><span class="marquee__dot">◆</span>
+        <span>Соревнования</span><span class="marquee__dot">◆</span>
+        <span>Бразильское ДЖИУ-ДЖИТСУ</span><span class="marquee__dot">◆</span>
+        <span>Бесплатная тренировка</span><span class="marquee__dot">◆</span>
+      </div>
+    </div>
+
+    <!-- Programs -->
+    <section class="section programs" id="programs">
+  <div class="container">
+
+    <div class="section__header">
+      <span class="section__eyebrow">Тренировки</span>
+      <h2 class="section__title">Выберите <span class="text-gold">свою программу</span></h2>
+    </div>
+
+    <div class="programs-grid">
+
+      <!-- Kids -->
+      <article class="program-box">
+
+        <img src="images/kids.jpeg" alt="Детские тренировки">
+
+        <div class="program-content">
+
+          <h3>Детские группы</h3>
+
+          <p class="age">
+            Возраст: 4–16 лет
+          </p>
+
+          <p>
+            Развитие дисциплины, уверенности, координации и навыков самообороны в дружелюбной атмосфере.
+          </p>
+
+          <ul>
+            <li>✔ 3 возрастные группы</li>
+            <li>✔ Безопасные тренировки</li>
+            <li>✔ Подготовка к соревнованиям</li>
+          </ul>
+
+          <a href="#contact" class="btn btn--primary">
+            Записаться
+          </a>
+
+        </div>
+
+      </article>
+
+      <!-- Adults -->
+      <article class="program-box">
+
+        <img src="images/adults.jpeg" alt="Взрослые">
+
+        <div class="program-content">
+
+          <h3>Взрослые</h3>
+
+          <p class="age">
+            Для начинающих и опытных спортсменов
+          </p>
+
+          <p>
+            Изучайте технику бразильского джиу-джитсу, улучшайте физическую форму и готовьтесь к соревнованиям.
+          </p>
+
+          <ul>
+            <li>✔ Gi и No-Gi</li>
+            <li>✔ Спарринги</li>
+            <li>✔ Подготовка к турнирам</li>
+          </ul>
+
+          <a href="#contact" class="btn btn--primary">
+            Записаться
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- Coaches -->
+    <section class="section coaches" id="coaches">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__eyebrow">Coaches</span>
+          <h2 class="section__title">Наш <span class="text-gold">тренер</span></h2>
+        </div>
+        <div class="coaches__grid coaches__grid--single">
+          <article class="coach-card coach-card--featured">
+            <div class="coach-card__image">
+    <img class="coach-card__photo"
+         src="images/coach.jpeg"
+         alt="Расул Билялов">
+    <div class="coach-card__overlay"></div>
+</div>
+            <div class="coach-card__body">
+              <h3 class="coach-card__name">🥋 Расул Билялов</h3>
+              <p class="coach-card__role">Главный тренер</p>
+              <ul class="coach-card__specialties">
+                <li>Бразильское ДЖИУ-ДЖИТСУ</li>
+                <li>Детские группы</li>
+                <li>Взрослые группы</li>
+                <li>Подготовка к соревнованиям</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section class="section schedule" id="schedule">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Schedule</span>
+          <h2 class="section__title">Расписание <span class="text-gold">тренировок</span></h2>
+        </div>
+        <div class="schedule__wrapper">
+          <div class="schedule__tabs" role="tablist">
+            <button class="schedule__tab schedule__tab--active" role="tab" aria-selected="true" data-day="monday">Понедельник</button>
+            <button class="schedule__tab" role="tab" aria-selected="false" data-day="wednesday">Среда</button>
+            <button class="schedule__tab" role="tab" aria-selected="false" data-day="friday">Пятница</button>
+          </div>
+          <div class="schedule__panels">
+            <div class="schedule__panel schedule__panel--active" id="monday" role="tabpanel">
+              <div class="schedule__row">
+                <span class="schedule__time">10:00</span>
+                <div class="schedule__info">
+                  <strong>Детская группа 8–12 лет</strong>
+                  <span>Kids · Gi</span>
+                </div>
+                <span class="schedule__tag schedule__tag--kids">Дети</span>
+              </div>
+              <div class="schedule__row">
+                <span class="schedule__time">15:00</span>
+                <div class="schedule__info">
+                  <strong>Детская группа 8–12 лет</strong>
+                  <span>Kids · Gi</span>
+                </div>
+                <span class="schedule__tag schedule__tag--kids">Дети</span>
+              </div>
+              <div class="schedule__row">
+                <span class="schedule__time">17:30</span>
+                <div class="schedule__info">
+                  <strong>Детская группа 4–7 лет</strong>
+                  <span>Kids · Gi</span>
+                </div>
+                <span class="schedule__tag schedule__tag--kids">Дети</span>
+              </div>
+              <div class="schedule__row">
+                <span class="schedule__time">18:30</span>
+                <div class="schedule__info">
+                  <strong>Взрослые / 13–16 лет</strong>
+                  <span>Adults · Все уровни</span>
+                </div>
+                <span class="schedule__tag">Взрослые</span>
+              </div>
+            </div>
+            <div class="schedule__panel" id="wednesday" role="tabpanel" hidden>
+              <div class="schedule__row">
+                <span class="schedule__time">10:00</span>
+                <div class="schedule__info">
+                  <strong>Детская группа 8–12 лет</strong>
+                  <span>Kids · Gi</span>
+                </div>
+                <span class="schedule__tag schedule__tag--kids">Дети</span>
+              </div>
+              <div class="schedule__row">
+                <span class="schedule__time">15:00</span>
+                <div class="schedule__info">
+                  <strong>Детская группа 8–12 лет</strong>
+                  <span>Kids · Gi</span>
+                </div>
+                <span class="schedule__tag schedule__tag--kids">Дети</span>
+              </div>
+              <div class="schedule__row">
+                <span class="schedule__time">17:30</span>
+                <div class="schedule__info">
+                  <strong>Детская группа 4–7 лет</strong>
+                  <span>Kids · Gi</span>
+                </div>
+                <span class="schedule__tag schedule__tag--kids">Дети</span>
+              </div>
+              <div class="schedule__row">
+                <span class="schedule__time">18:30</span>
+                <div class="schedule__info">
+                  <strong>Взрослые / 13–16 лет</strong>
+                  <span>Adults · Все уровни</span>
+                </div>
+                <span class="schedule__tag">Взрослые</span>
+              </div>
+            </div>
+            <div class="schedule__panel" id="friday" role="tabpanel" hidden>
+              <div class="schedule__row">
+                <span class="schedule__time">10:00</span>
+                <div class="schedule__info">
+                  <strong>Детская группа 8–12 лет</strong>
+                  <span>Kids · Gi</span>
+                </div>
+                <span class="schedule__tag schedule__tag--kids">Дети</span>
+              </div>
+              <div class="schedule__row">
+                <span class="schedule__time">15:00</span>
+                <div class="schedule__info">
+                  <strong>Детская группа 8–12 лет</strong>
+                  <span>Kids · Gi</span>
+                </div>
+                <span class="schedule__tag schedule__tag--kids">Дети</span>
+              </div>
+              <div class="schedule__row">
+                <span class="schedule__time">17:30</span>
+                <div class="schedule__info">
+                  <strong>Детская группа 4–7 лет</strong>
+                  <span>Kids · Gi</span>
+                </div>
+                <span class="schedule__tag schedule__tag--kids">Дети</span>
+              </div>
+              <div class="schedule__row">
+                <span class="schedule__time">18:30</span>
+                <div class="schedule__info">
+                  <strong>Взрослые / 13–16 лет</strong>
+                  <span>Adults · Все уровни</span>
+                </div>
+                <span class="schedule__tag">Взрослые</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__eyebrow">Testimonials</span>
+          <h2 class="section__title">Отзывы <span class="text-gold">учеников</span></h2>
+        </div>
+        <div class="testimonials__grid testimonials__grid--single">
+          <blockquote class="testimonial-card testimonial-card--featured">
+            <div class="testimonial-card__stars" aria-label="5 из 5">★★★★★</div>
+            <p class="testimonial-card__quote">
+              «Отличная атмосфера, профессиональный тренер и дружная команда.»
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__eyebrow">Pricing</span>
+          <h2 class="section__title">Стоимость <span class="text-gold">занятий</span></h2>
+        </div>
+        <div class="pricing__grid">
+          <article class="pricing-card">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Разовое занятие</h3>
+            </div>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">2&nbsp;000</span>
+              <span class="pricing-card__period">₸</span>
+            </div>
+            <a href="#contact" class="btn btn--outline btn--block">Записаться</a>
+          </article>
+
+          <article class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge">Популярный</span>
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Абонемент на месяц</h3>
+            </div>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">15&nbsp;000</span>
+              <span class="pricing-card__period">₸</span>
+            </div>
+            <a href="#contact" class="btn btn--primary btn--block">Записаться</a>
+          </article>
+
+          <article class="pricing-card">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Индивидуальная тренировка</h3>
+            </div>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">40&nbsp;000</span>
+              <span class="pricing-card__period">₸</span>
+            </div>
+            <a href="#contact" class="btn btn--outline btn--block">Записаться</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container cta-banner__inner">
+        <div class="cta-banner__content">
+          <h2 class="cta-banner__title">Готовы начать?</h2>
+          <p class="cta-banner__text">Первая тренировка — бесплатно. Приходите и убедитесь сами.</p>
+        </div>
+        <a href="#contact" class="btn btn--primary btn--glow btn--lg">Записаться на бесплатную тренировку</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__center">
+          <span class="section__eyebrow">Contact</span>
+          <h2 class="section__title">Свяжитесь <span class="text-gold">с нами</span></h2>
+          <p class="contact__lead">
+            Запишитесь на бесплатную тренировку или напишите нам — ответим в ближайшее время.
+          </p>
+          <div class="contact__actions">
+            <a href="#contactForm" class="btn btn--primary btn--glow">Записаться</a>
+            <a href="tel:+77023428001" class="btn btn--outline contact__btn">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5"/></svg>
+              Позвонить · 8 702 342 8001
+            </a>
+            <a href="https://wa.me/77079491718" class="btn btn--outline contact__btn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="1.5"/></svg>
+              WhatsApp
+            </a>
+            <a href="https://www.instagram.com/1718.jiujitsu?igsh=MXVpNmx0YXB0ZXU4OQ%3D%3D&utm_source=qr" class="btn btn--outline contact__btn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="6" r="1" fill="currentColor"/></svg>
+              Instagram
+            </a>
+          </div>
+
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+              </div>
+              <div class="form__group">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="program">Программа</label>
+              <select id="program" name="program">
+                <option value="">Выберите программу</option>
+                <option value="kids">Детские группы</option>
+                <option value="adults">Взрослые группы</option>
+                <option value="competition">Подготовка к соревнованиям</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="message">Сообщение <span class="form__optional">(необязательно)</span></label>
+              <textarea id="message" name="message" rows="3" placeholder="Ваш вопрос или пожелание..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block btn--glow">Записаться на бесплатную тренировку</button>
+            <p class="form__success" id="formSuccess" hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="footer__logo">
+        <span class="footer__logo-mark">BJJ</span>
+        Bilyalov <strong>JJ TEAM</strong>
+      </a>
+      <p class="footer__copy">&copy; 2026 Bilyalov JJ Team. Все права защищены.</p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/1718.jiujitsu?igsh=MXVpNmx0YXB0ZXU4OQ%3D%3D&utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="6" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="https://wa.me/77079491718" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+        <a href="tel:+77023428001" aria-label="Позвонить">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -158,22 +158,37 @@
     counterObserver.observe(el);
   });
 
-  /* ---- Contact form ---- */
-  contactForm.addEventListener('submit', function (e) {
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const name = document.getElementById('name');
-    const phone = document.getElementById('phone');
+    const data = {
+        name: document.getElementById("name").value,
+        phone: document.getElementById("phone").value,
+        program: document.getElementById("program").value
+    };
 
-    if (!name.value.trim() || !phone.value.trim()) {
-      return;
+    try {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbzDQDdowbEYOR7bUxW140h_wHpL4Q9oemdHSfPWq6MS5wtqTmj-XPdbnJwdiW2CWYLw/exec", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            alert("✅ Спасибо! Мы скоро с вами свяжемся.");
+            form.reset();
+        } else {
+            alert("❌ Ошибка отправки.");
+        }
+
+    } catch (error) {
+        console.error(error);
+        alert("❌ Ошибка соединения.");
     }
+});
 
-    formSuccess.hidden = false;
-    contactForm.reset();
-
-    setTimeout(function () {
-      formSuccess.hidden = true;
-    }, 5000);
-  });
 })();

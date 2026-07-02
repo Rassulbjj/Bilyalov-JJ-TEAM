@@ -190,5 +190,3 @@ form.addEventListener("submit", async (e) => {
         alert("❌ Ошибка соединения.");
     }
 });
-
-})();

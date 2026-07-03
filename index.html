@@ -339,6 +339,30 @@
     </section>
 
     <!-- Testimonials -->
+     <section id="reviews" class="reviews">
+    <div class="container">
+        <h2>Отзывы</h2>
+
+        <div id="reviewsList"></div>
+
+        <form id="reviewForm">
+            <input type="text" id="reviewName" placeholder="Ваше имя" required>
+
+            <select id="reviewRating" required>
+                <option value="">Оценка</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+            </select>
+
+            <textarea id="reviewText" placeholder="Ваш отзыв" required></textarea>
+
+            <button type="submit">Отправить отзыв</button>
+        </form>
+    </div>
+</section>
     <section class="section testimonials" id="testimonials">
       <div class="container">
         <div class="section__header section__header--center">
